@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        div.cobaafter::after{
+            content: " ~ yak Betul";
+        }
+        p.cobabefore::before{
+            content: "Aku Suka ~";
+        }
+        p.cobafirstletter::first-letter{
+            color: coral;
+            font-size: 90px;
+        }
+        div.cobafirstline::first-line{
+            background-color: darkseagreen;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        ::marker{
+            color: lightseagreen;
+        }
+        i.cobaselection::selection{
+            color: palevioletred;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h3>Pseudo Element After</h3>
+    <div class="cobaafter">
+        Aku Suka Makan Nasi
+    </div>
+    <h3>Pseudo Element Before</h3>
+    <p class="cobabefore">
+        Berolahraga
+    </p>
+    <h3>Pseudo Element First Letter</h3>
+    <p class="cobafirstletter">
+        Aku Suka Makan Nasi dan Juga Berolahraga
+    </p>
+    <h3>Pseudo Element First Line</h3>
+    <div class="cobafirstline">
+        Namaku Suka aku suka sekali dua kali tiga kali suka jadi aku suka suka aja si sebenernya ya gimana yak, 
+        YGC? YGY makanya sekarang aku suka aja suka terus sampai sekarang aku tetep suka terus gimana dong, 
+        apa jadinya suka suka? apakah benar suka itu bener bener suka? atau suka memang suka sekali dengan suka
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, saepe suscipit incidunt possimus 
+        aut minima beatae quaerat voluptatem, quae optio, minus quia nesciunt distinctio sapiente fuga rem odit 
+        repudiandae velit?
+    </div>
+    <h3>Pseudo Element Marker</h3>
+    <ul>
+        <li>Merah</li>
+        <li>Biru</li>
+        <li>Kuning</li>
+        <li>Hijau</li>
+    </ul>
+    <ol>
+        <li>Asus</li>
+        <li>Acer</li>
+        <li>Lenovo</li>
+        <li>Dell</li>
+    </ol>
+    <h3>Pseudo Element Selection</h3>
+    <i class="cobaselection">
+        Herman Jago Aim
+    </i>
+    <br>
+    <a href="pseudoclass.html"><button>Kembali ke Pseudo Class</button></a>
+</body>
+</html>

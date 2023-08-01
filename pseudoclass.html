@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        a:link {
+            color: orange; /*untuk link yang belum pernah di klik atau belum pernah dikunjungi*/
+        }
+
+        a:visited {
+            color: mediumorchid; /*Jika link sudah di klik maka warna link yang sudah di klik tersebut akan berubah*/
+        }
+
+        a:hover {
+            color: red;
+            size: 15px; /*Digunakan ketika kursor kita mengarah pada link yang ada*/
+        }
+
+        
+        a:active {
+            color: yellow; /*Warna akan berubah jika link di klik kanan*/
+        }
+        a.linkunik:hover{
+            color: burlywood;
+            background-color: black;
+        }
+        div:hover{
+            background-color: aqua;
+        }
+        p.hiddentext{
+            display: none;
+            background-color: antiquewhite;
+            size: 15px;
+        }
+        div:hover p{
+            display: block;
+        }
+        p.anakpertama:first-child{
+            color: blueviolet;
+        }
+        p i:first-child{
+            color: darkcyan;
+        }
+        input:checked{
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Link Yang Sudah dikunjungi</h3>
+    <a href="applications.html">INI LINK</a>
+    <br>
+
+    <h3>Link Yang Belum dikunjungi</h3>
+    <a href="coba.html">INI JUGA LINK</a>
+    <br>
+
+    <h3>Link Dengan Class linkunik</h3>
+    <a class="linkunik" href="aaa.html">DAN INI JUGA LINK</a>
+    <br>
+
+    <h3>Catatan Penggunan Pseudo Class pada tag a</h3>
+    <ul>
+        <li>a:hover     => harus meletakkan kursor pada link dan tidak perlu di klik</li>
+        <li>a:link      => warna default dari link sebelum di klik atau di kunjungi</li>
+        <li>a:visited   => warna link akan berubah setelah di klik atau dikunjungi</li>
+        <li>a:active    => warna link akan berubah jika di klik kanan</li>
+    </ul><br>
+    <h3>Pseudo Class dengan Div</h3>
+    <div>
+        Aku adalah Div
+    </div>
+    <h3>Menyembunyikan Tag p pada Div</h3>
+    <div>Hover ke sini agar mendapatkan 1Jt
+        <p class="hiddentext">Selamat kamu tertipu wkwk</p>
+    </div>
+    <h3>Pseudo Code "first-child"</h3>
+    <div>
+        <p class="anakpertama">
+            Aku anak pertama coy, aku punya kuasa
+        </p>
+        <p class="anakpertama">
+            Aku anak kedua, aku menang pemikiran
+        </p>
+    </div>
+    <h3>first child pada dua selector</h3>  
+    <p>
+        <i>
+            Selector Pertama
+        </i><br>
+        <i>
+            Selector Kedua
+        </i>
+    </p>
+    <h3>Pseudo Class Checked</h3> 
+    <input type="radio" checked="checked" value="Check Pertama">Check Pertama dengan Checked <br>
+    <input type="checkbox" checked="checked" value="Check Kedua">Check Kedua dengan Checked<br>
+    <input type="radio" value="Check Pertama">Check Pertama Tanpa Checked<br>
+    <input type="checkbox" value="Check Kedua">Check Kedua Tanpa Checked<br><br>
+    
+    <a href="pseudoelement.html"><button>Lanjut ke Pseudo Element</button></a>
+</body>
+</html>
